@@ -18,6 +18,5 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  my_array = phone.scan(/\d{3}[0-9A-Za-z]{7}/)
-  binding.pry
+  phone.match(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/) ? true : false
 end
