@@ -19,4 +19,5 @@ end
 
 def valid_phone_number?(phone)
   my_array = phone.scan(/\d{3}[0-9A-Za-z]{7}/)
+  binding.pry
 end
